@@ -25,14 +25,14 @@ int main()
     }
     printf("\n");
 
-    int counter = 1;
+    int sorts_on_pass = 1;
     int sorted_elements = 0;
 
-    while (counter != 0)
+    while (sorts_on_pass != 0)
     {  
-        if (counter != 0)
+        if (sorts_on_pass != 0)
         {            
-            counter = 0;
+            sorts_on_pass = 0;
         }
 
         for (int i = 0; i < arr_size - 1 - sorted_elements; i++)
@@ -44,7 +44,7 @@ int main()
                 temp = arr[i];
                 arr[i] = arr[i + 1];
                 arr[i + 1] = temp;
-                counter++;
+                sorts_on_pass++;
 
                 printf("\nSorted array: ");
 
@@ -56,7 +56,7 @@ int main()
                 printf("\n");
             }
         }  
-        if (counter != 0)
+        if (sorts_on_pass != 0)
         {
             sorted_elements++;
         }
