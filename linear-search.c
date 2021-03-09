@@ -2,11 +2,14 @@
 
 int main()
 {
-    int arr_size, find;
+    int arr_size = 0, find;
 
-    printf("Enter array size: ");
-    scanf("%d", &arr_size);
-
+    while (arr_size < 1)
+    {
+        printf("Enter array size: ");
+        scanf("%d", &arr_size);
+    }
+    
     int arr[arr_size];
 
     printf("\nInitialize your array.\n\n");
